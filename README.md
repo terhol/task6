@@ -5,8 +5,8 @@ Sixth learning task from subject PB162 on [FI MUNI](https://www.fi.muni.cz/)
 
 ### Pro vyřešení této úlohy je třeba znát
 
-    -   Setříděné kontejnery, komparátory,
-    -   vstup a výstup.
+-   Setříděné kontejnery, komparátory
+-   vstup a výstup.
 
 ### Popis úlohy
 
@@ -18,7 +18,7 @@ neměňte!
 
 ### Zadání pro cvičení (3 body)
 
-pravte třídu `Product` tak, aby definovala přirozené uspořádání
+Upravte třídu `Product` tak, aby definovala přirozené uspořádání
     výrobků podle jejich názvu (lexikograficky).
 -   Vytvořte komparátor `ProductPriceComparator`, který bude definovat
     uspořádání výrobků podle ceny vzestupně. Doplňujícím kritériem pro
