@@ -5,7 +5,7 @@ package se.terhol.task6.core;
  *
  * @author Jan Papousek
  */
-public class Product {
+public class Product implements Comparable<Product> {
     private String name;
     private int price;
     private int quantity;
@@ -37,6 +37,23 @@ public class Product {
         return name;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Product)) {
+            return false;
+        }
+        Product product = (Product) o;
+        return this.name.equals(product.getName());
+    }
+
+    @Override
+    public int hashCode() {
+        return this.name.hashCode() * 31;
+    }
+
     /**
      * @return The price of the product
      */
@@ -62,5 +79,10 @@ public class Product {
             throw new IllegalArgumentException("The parameter [quantity] has to be a positive number.");
         }
         this.quantity = quantity;
+    }
+
+    @Override
+    public int compareTo(Product product) {
+        return this.name.compareTo(product.getName());
     }
 }
