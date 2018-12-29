@@ -22,3 +22,7 @@ hs_err_pid*
 
 # dist
 out
+output-data.txt
+
+# OS
+.DS_Store

@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.FileInputStream;
 
 public class Demo2 {
-    /*public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
         ShoppingListIO list = createList();
 
         System.out.println();
@@ -26,7 +26,7 @@ public class Demo2 {
         list = new ShoppingListImpl(new HashSet<Product>());
         System.out.println("---- Test nacteni bezchybnych dat z 'input-data-ok.txt'");
         try {
-            list.load(new FileInputStream("src/se/terhol/task6/resourcesinput-data-ok.txt"));
+            list.load(new FileInputStream("src/se/terhol/task6/resources/input-data-ok.txt"));
             System.out.println(" [OK] nasledujici vypis by se mel (az na poradi radku) shodovat se souborem 'input-data-ok.txt':");
             System.out.println();
             list.save(System.out);
@@ -38,7 +38,7 @@ public class Demo2 {
         list = new ShoppingListImpl(new HashSet<Product>());
         System.out.println("---- Test nacteni chybnych dat z 'input-data-error-1.txt'");
         try {
-            list.load(new FileInputStream("src/se/terhol/task6/resourcesinput-data-error-1.txt"));
+            list.load(new FileInputStream("src/se/terhol/task6/resources/input-data-error-1.txt"));
             System.out.println(" [ERROR] nebyla vyhozena vyjimka");
         } catch (ShoppingListException ex) {
             System.out.println(" [OK]");
@@ -50,7 +50,7 @@ public class Demo2 {
         list = new ShoppingListImpl(new HashSet<Product>());
         System.out.println("---- Test nacteni chybnych dat z 'input-data-error-2.txt'");
         try {
-            list.load(new FileInputStream("src/se/terhol/task6/resourcesinput-data-error-2.txt"));
+            list.load(new FileInputStream("src/se/terhol/task6/resources/input-data-error-2.txt"));
             System.out.println(" [ERROR] nebyla vyhozena vyjimka");
         } catch (ShoppingListException ex) {
             System.out.println(" [OK]");
@@ -74,5 +74,5 @@ public class Demo2 {
         }
 
         return new ShoppingListImpl(productSet);
-    }*/
+    }
 }

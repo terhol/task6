@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.HashSet;
 
 public class Demo1 {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         ShoppingList list = createList();
 
         System.out.println();
@@ -38,5 +38,5 @@ public class Demo1 {
         }
 
         return new ShoppingListImpl(productSet);
-    }
+    }*/
 }

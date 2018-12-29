@@ -12,8 +12,8 @@ import java.io.OutputStream;
  */
 public interface ShoppingListIO extends ShoppingList {
     /**
-     * Reads input stream and sets shoping list content (products).
-     * Old shoping list content (if any) is overwritten.
+     * Reads input stream and sets shopping list content (products).
+     * Old shopping list content (if any) is overwritten.
      * This method should fail atomically, i.e. if reading fails for some
      * reason, then old scoreboard content is preserved!
      * <p>
@@ -29,7 +29,7 @@ public interface ShoppingListIO extends ShoppingList {
      *
      * @param input Input stream -- source of data.
      * @throws ShoppingListException on IO failure or if data in input stream
-     *                              has invalid format.
+     *                               has invalid format.
      */
     void load(InputStream input) throws ShoppingListException;
 
@@ -39,7 +39,7 @@ public interface ShoppingListIO extends ShoppingList {
      *
      * @param output Output stream.
      * @throws ShoppingListException on failure during the writing data into
-     *                              output stream.
+     *                               output stream.
      */
     void save(OutputStream output) throws ShoppingListException;
 }
